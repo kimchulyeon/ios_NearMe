@@ -12,6 +12,8 @@
 		6E926E2629838C5600A68EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E926E2529838C5600A68EFB /* ViewController.swift */; };
 		6E926E2B29838C5700A68EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E926E2A29838C5700A68EFB /* Assets.xcassets */; };
 		6E926E2E29838C5700A68EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E926E2C29838C5700A68EFB /* LaunchScreen.storyboard */; };
+		6E926E372983AF0C00A68EFB /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E926E362983AF0C00A68EFB /* PlaceAnnotation.swift */; };
+		6E926E3A2983B03C00A68EFB /* CLLocation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E926E392983B03C00A68EFB /* CLLocation+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6E926E2A29838C5700A68EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E926E2D29838C5700A68EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E926E2F29838C5700A68EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E926E362983AF0C00A68EFB /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		6E926E392983B03C00A68EFB /* CLLocation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		6E926E2029838C5600A68EFB /* NearMe */ = {
 			isa = PBXGroup;
 			children = (
+				6E926E382983B02A00A68EFB /* Extensions */,
+				6E926E352983AEFE00A68EFB /* Annotations */,
 				6E926E2129838C5600A68EFB /* AppDelegate.swift */,
 				6E926E2329838C5600A68EFB /* SceneDelegate.swift */,
 				6E926E2529838C5600A68EFB /* ViewController.swift */,
@@ -62,6 +68,22 @@
 				6E926E2F29838C5700A68EFB /* Info.plist */,
 			);
 			path = NearMe;
+			sourceTree = "<group>";
+		};
+		6E926E352983AEFE00A68EFB /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				6E926E362983AF0C00A68EFB /* PlaceAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		6E926E382983B02A00A68EFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E926E392983B03C00A68EFB /* CLLocation+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E926E372983AF0C00A68EFB /* PlaceAnnotation.swift in Sources */,
 				6E926E2629838C5600A68EFB /* ViewController.swift in Sources */,
 				6E926E2229838C5600A68EFB /* AppDelegate.swift in Sources */,
 				6E926E2429838C5600A68EFB /* SceneDelegate.swift in Sources */,
+				6E926E3A2983B03C00A68EFB /* CLLocation+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +302,8 @@
 				DEVELOPMENT_TEAM = 7YM75J8UJJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearMe/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "NearMe requires location so it can offer nearby points of interests.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
@@ -307,6 +333,8 @@
 				DEVELOPMENT_TEAM = 7YM75J8UJJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NearMe/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "NearMe requires location so it can offer nearby points of interests.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
